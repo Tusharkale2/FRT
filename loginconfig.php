@@ -1,11 +1,13 @@
 <?php
-$dbhost='localhost';
-$dbname='jnex_db';
-$dbusername='root';
-$dbpass='';
+$host = 'frt.mysql.database.azure.com';
+$username = 'tushar@frt';
+$password = 'Tazz@12345';
+$db_name = 'FRT';
 
-$conn = mysqli_connect("$dbhost", "$dbusername", "$dbpass", "$dbname");
-
+$conn = mysqli_init();
+mysqli_ssl_set($conn, NULL, NULL,'C:\wamp64\www\Jnex\DigiCertGlobalRootG2.crt.pem', NULL, NULL); 
+mysqli_real_connect($conn, "frt.mysql.database.azure.com", "tushar@frt", 'Tazz@12345', 'FRT', 3306);
+if(isset($_POST['register'])){
 //$id= $_POST['id'];
        // $edate= $_POST['edate'];
        
@@ -44,10 +46,13 @@ echo "<script>alert('incorrect id password');</script>";
 
 ?>
 <?php
-$dbhost='localhost';
-$dbname='jnex_db';
-$dbusername='root';
-$dbpass='';
+$host = 'frt.mysql.database.azure.com';
+$username = 'tushar@frt';
+$password = 'Tazz@12345';
+$db_name = 'FRT';
 
-$conn = mysqli_connect("$dbhost", "$dbusername", "$dbpass", "$dbname");
+$conn = mysqli_init();
+mysqli_ssl_set($conn, NULL, NULL,'C:\wamp64\www\Jnex\DigiCertGlobalRootG2.crt.pem', NULL, NULL); 
+mysqli_real_connect($conn, "frt.mysql.database.azure.com", "tushar@frt", 'Tazz@12345', 'FRT', 3306);
+
 ?>
