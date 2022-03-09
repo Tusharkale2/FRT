@@ -3,10 +3,11 @@ $host = 'frt.mysql.database.azure.com';
 $username = 'tushar@frt';
 $password = 'Tazz@12345';
 $db_name = 'FRT';
- echo "<script>alert('Register Sucssefully');</script>";  
+ 
 $conn = mysqli_init();
 mysqli_ssl_set($conn,NULL,NULL, "C:\wamp64\www\Jnex\DigiCertGlobalRootG2.crt.pem", NULL, NULL);
 mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306 );
+echo "<script>alert('Register Sucssefully');</script>";  
 if(isset($_POST['register'])){
 /* echo "<script>alert('Register Sucssefully');</script>";*/ 
  $name= $_POST['name']; 
