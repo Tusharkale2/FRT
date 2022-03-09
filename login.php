@@ -2,13 +2,15 @@
 /*session_start();*/
 ?>
 <?php
-$dbhost='localhost';
-$dbname='jnexinc';
-$dbusername='root';
-$dbpass='';
-
-$conn = mysqli_connect("$dbhost", "$dbusername", "$dbpass", "$dbname");
-
+$host = 'frt.mysql.database.azure.com';
+$username = 'tushar@frt';
+$password = 'Tazz@12345';
+$db_name = 'FRT';
+ 
+$conn = mysqli_init();
+mysqli_ssl_set($conn,NULL,NULL, "C:\wamp64\www\Jnex\DigiCertGlobalRootG2.crt.pem", NULL, NULL);
+mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306 );
+echo "<script>alert('Register Sucssefully');</script>";  
 //$msg="";
 //if(isset($_POST['submit'])){
 	//$username=mysqli_real_escape_string($conn,$_POST['id']);
