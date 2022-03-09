@@ -4,7 +4,7 @@ $username = 'tushar@frt';
 $password = 'Tazz@12345';
 $db_name = 'FRT';
  
-$conn = mysqli_init();
+$conn = mysqli_connect( "frt.mysql.database.azure.com", "tushar@frt", 'Tazz@12345', 'frt', 3306);
 mysqli_ssl_set($conn, NULL, NULL,'/var/www/html/DigiCertGlobalRootG2.crt.pem', NULL, NULL); 
 mysqli_connect($conn, "frt.mysql.database.azure.com", "tushar@frt", 'Tazz@12345', 'frt', 3306);
 if (mysqli_connect_errno())
