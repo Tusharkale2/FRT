@@ -10,7 +10,10 @@ $db_name = 'FRT';
 $conn = mysqli_init();
 mysqli_ssl_set($conn,NULL,NULL, "C:\wamp64\www\Jnex\DigiCertGlobalRootG2.crt.pem", NULL, NULL);
 mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306 );
-echo "<script>alert('Register Sucssefully');</script>";  
+if (mysqli_connect_errno())
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
 //$msg="";
 //if(isset($_POST['submit'])){
 	//$username=mysqli_real_escape_string($conn,$_POST['id']);
