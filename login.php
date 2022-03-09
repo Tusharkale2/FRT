@@ -8,7 +8,7 @@ $password = 'Tazz@12345';
 $db_name = 'FRT';
  
 $conn = mysqli_init();
-mysqli_ssl_set($conn,NULL,NULL, "DigiCertGlobalRootG2.crt.pem", NULL, NULL);
+mysqli_ssl_set($conn,NULL,NULL,  "/var/www/html/BaltimoreCyberTrustRoot.crt.pem", NULL, NULL);
 mysqli_real_connect($conn,'frt.mysql.database.azure.com', 'tushar@frt','Tazz@12345', 'frt', 3306 ,NULL, MYSQLI_CLIENT_SSL);
 if (mysqli_connect_errno())
 {
