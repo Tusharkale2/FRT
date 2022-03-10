@@ -11,7 +11,7 @@ if(isset($_POST['register'])){
      
             
                       echo "";
-                       echo "<script>alert('Register Sucssefully');</script>";  
+                       echo "<script>alert('submitted Sucssefully');</script>";  
                        
                        //$pass= "";
 
@@ -477,12 +477,12 @@ if(isset($_POST['register'])){
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email">
+                  <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" >
+                <input type="text" class="form-control" name="subject" id="subject" required >
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
@@ -511,9 +511,9 @@ if(isset($_POST['register'])){
             <div class="footer-info">
               <h3>FRT Chemicals</h3>
               <p>
-                Trimurti Honey Gold, Plot No. 44 <br>
-                Range Hills Road, Ashoknagar, Shivajinagar, Pune
-Maharashtra - 411007
+                Uttkarshnagar, Plot No. 44 <br>
+                solapur road, Hadpsar, Gadital, Pune
+Maharashtra - 411028
 India<br><br>
                 <strong>Phone:</strong><a href = "tel:(+91) 9970148213">(+91) 9970148213</a><br>
                 <strong>Email:</strong><a href = "mailto:info@test.com">info@test.com</a><br>
